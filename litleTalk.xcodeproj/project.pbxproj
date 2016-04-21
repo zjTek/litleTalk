@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F3C2B860D5696FB1D80C0B5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2352F4E2F2F8CA24FADF9D /* Pods.framework */; };
+		BB0FBDA91CC60E8300EADB65 /* AJWNumericValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0FBD931CC60E8300EADB65 /* AJWNumericValidator.m */; };
+		BB0FBDAA1CC60E8300EADB65 /* AJWStringValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0FBD951CC60E8300EADB65 /* AJWStringValidator.m */; };
+		BB0FBDAB1CC60E8300EADB65 /* AJWValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0FBD981CC60E8300EADB65 /* AJWValidator.m */; };
+		BB0FBDAC1CC60E8300EADB65 /* AJWValidatorCustomRule.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0FBD9A1CC60E8300EADB65 /* AJWValidatorCustomRule.m */; };
+		BB0FBDAD1CC60E8300EADB65 /* AJWValidatorEqualRule.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0FBD9C1CC60E8300EADB65 /* AJWValidatorEqualRule.m */; };
+		BB0FBDAE1CC60E8300EADB65 /* AJWValidatorRangeRule.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0FBD9E1CC60E8300EADB65 /* AJWValidatorRangeRule.m */; };
+		BB0FBDAF1CC60E8300EADB65 /* AJWValidatorRegularExpressionRule.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0FBDA01CC60E8300EADB65 /* AJWValidatorRegularExpressionRule.m */; };
+		BB0FBDB01CC60E8300EADB65 /* AJWValidatorRemoteRule.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0FBDA21CC60E8300EADB65 /* AJWValidatorRemoteRule.m */; };
+		BB0FBDB11CC60E8300EADB65 /* AJWValidatorRequiredRule.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0FBDA41CC60E8300EADB65 /* AJWValidatorRequiredRule.m */; };
+		BB0FBDB21CC60E8300EADB65 /* AJWValidatorRule.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0FBDA61CC60E8300EADB65 /* AJWValidatorRule.m */; };
+		BB0FBDB31CC60E8300EADB65 /* UIView+AJWValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0FBDA81CC60E8300EADB65 /* UIView+AJWValidator.m */; };
+		BB0FBDB51CC618AB00EADB65 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0FBDB41CC618AB00EADB65 /* Input.swift */; };
+		BB0FBDB91CC637A700EADB65 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0FBDB81CC637A700EADB65 /* TabBarViewController.swift */; };
+		BB0FBDBB1CC65CB000EADB65 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0FBDBA1CC65CB000EADB65 /* MoreViewController.swift */; };
+		BB225BEF1CC120BA00FE92FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB225BEE1CC120BA00FE92FC /* AppDelegate.swift */; };
+		BB225BF11CC120BA00FE92FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB225BF01CC120BA00FE92FC /* ViewController.swift */; };
+		BB225BF41CC120BA00FE92FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB225BF21CC120BA00FE92FC /* Main.storyboard */; };
+		BB225BF61CC120BA00FE92FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB225BF51CC120BA00FE92FC /* Assets.xcassets */; };
+		BB225BF91CC120BA00FE92FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB225BF71CC120BA00FE92FC /* LaunchScreen.storyboard */; };
+		BB225C041CC120BA00FE92FC /* litleTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB225C031CC120BA00FE92FC /* litleTalkTests.swift */; };
+		BB225C0F1CC120BA00FE92FC /* litleTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB225C0E1CC120BA00FE92FC /* litleTalkUITests.swift */; };
+		BB31C3811CC7386900ED7B1E /* ChatlistNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31C3801CC7386900ED7B1E /* ChatlistNaviController.swift */; };
+		BB31C3841CC772AE00ED7B1E /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31C3831CC772AE00ED7B1E /* TextFieldsEffects.swift */; };
+		BB31C3861CC772BB00ED7B1E /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31C3851CC772BB00ED7B1E /* SwiftNotice.swift */; };
+		BB6412AF1CC4BC7700DBE656 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6412AE1CC4BC7700DBE656 /* LoginViewController.swift */; };
+		BB6412B11CC4BC9800DBE656 /* RegisterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6412B01CC4BC9800DBE656 /* RegisterTableViewController.swift */; };
+		BB6412E31CC4CDC600DBE656 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6412D71CC4CDC600DBE656 /* HoshiTextField.swift */; };
+		BB6412E41CC4CDC600DBE656 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB6412D81CC4CDC600DBE656 /* Info.plist */; };
+		BB6412E71CC4CDC600DBE656 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6412DB1CC4CDC600DBE656 /* KaedeTextField.swift */; };
+		BBACD9CF1CC1E7D600CA2C8D /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBACD9CE1CC1E7D600CA2C8D /* ConversationListViewController.swift */; };
+		BBACD9D11CC1E7E400CA2C8D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBACD9D01CC1E7E400CA2C8D /* ChatViewController.swift */; };
+		BBD722311CC85F05006E1108 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD722301CC85F05006E1108 /* FindViewController.swift */; };
+		BBD722331CC8604C006E1108 /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD722321CC8604C006E1108 /* AddFriendViewController.swift */; };
+		BBD722351CC86C66006E1108 /* SearedFriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD722341CC86C66006E1108 /* SearedFriendDetailViewController.swift */; };
+		BBD722371CC8771B006E1108 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD722361CC8771B006E1108 /* ContactsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB225C001CC120BA00FE92FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB225BE31CC120BA00FE92FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB225BEA1CC120BA00FE92FC;
+			remoteInfo = litleTalk;
+		};
+		BB225C0B1CC120BA00FE92FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB225BE31CC120BA00FE92FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB225BEA1CC120BA00FE92FC;
+			remoteInfo = litleTalk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68188F8BD24B098142CC1920 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6B2352F4E2F2F8CA24FADF9D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0FBD921CC60E8300EADB65 /* AJWNumericValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJWNumericValidator.h; sourceTree = "<group>"; };
+		BB0FBD931CC60E8300EADB65 /* AJWNumericValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJWNumericValidator.m; sourceTree = "<group>"; };
+		BB0FBD941CC60E8300EADB65 /* AJWStringValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJWStringValidator.h; sourceTree = "<group>"; };
+		BB0FBD951CC60E8300EADB65 /* AJWStringValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJWStringValidator.m; sourceTree = "<group>"; };
+		BB0FBD961CC60E8300EADB65 /* AJWValidator+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AJWValidator+Private.h"; sourceTree = "<group>"; };
+		BB0FBD971CC60E8300EADB65 /* AJWValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJWValidator.h; sourceTree = "<group>"; };
+		BB0FBD981CC60E8300EADB65 /* AJWValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJWValidator.m; sourceTree = "<group>"; };
+		BB0FBD991CC60E8300EADB65 /* AJWValidatorCustomRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJWValidatorCustomRule.h; sourceTree = "<group>"; };
+		BB0FBD9A1CC60E8300EADB65 /* AJWValidatorCustomRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJWValidatorCustomRule.m; sourceTree = "<group>"; };
+		BB0FBD9B1CC60E8300EADB65 /* AJWValidatorEqualRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJWValidatorEqualRule.h; sourceTree = "<group>"; };
+		BB0FBD9C1CC60E8300EADB65 /* AJWValidatorEqualRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJWValidatorEqualRule.m; sourceTree = "<group>"; };
+		BB0FBD9D1CC60E8300EADB65 /* AJWValidatorRangeRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJWValidatorRangeRule.h; sourceTree = "<group>"; };
+		BB0FBD9E1CC60E8300EADB65 /* AJWValidatorRangeRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJWValidatorRangeRule.m; sourceTree = "<group>"; };
+		BB0FBD9F1CC60E8300EADB65 /* AJWValidatorRegularExpressionRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJWValidatorRegularExpressionRule.h; sourceTree = "<group>"; };
+		BB0FBDA01CC60E8300EADB65 /* AJWValidatorRegularExpressionRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJWValidatorRegularExpressionRule.m; sourceTree = "<group>"; };
+		BB0FBDA11CC60E8300EADB65 /* AJWValidatorRemoteRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJWValidatorRemoteRule.h; sourceTree = "<group>"; };
+		BB0FBDA21CC60E8300EADB65 /* AJWValidatorRemoteRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJWValidatorRemoteRule.m; sourceTree = "<group>"; };
+		BB0FBDA31CC60E8300EADB65 /* AJWValidatorRequiredRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJWValidatorRequiredRule.h; sourceTree = "<group>"; };
+		BB0FBDA41CC60E8300EADB65 /* AJWValidatorRequiredRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJWValidatorRequiredRule.m; sourceTree = "<group>"; };
+		BB0FBDA51CC60E8300EADB65 /* AJWValidatorRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJWValidatorRule.h; sourceTree = "<group>"; };
+		BB0FBDA61CC60E8300EADB65 /* AJWValidatorRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJWValidatorRule.m; sourceTree = "<group>"; };
+		BB0FBDA71CC60E8300EADB65 /* UIView+AJWValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AJWValidator.h"; sourceTree = "<group>"; };
+		BB0FBDA81CC60E8300EADB65 /* UIView+AJWValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AJWValidator.m"; sourceTree = "<group>"; };
+		BB0FBDB41CC618AB00EADB65 /* Input.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		BB0FBDB81CC637A700EADB65 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		BB0FBDBA1CC65CB000EADB65 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		BB225BEB1CC120BA00FE92FC /* litleTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = litleTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB225BEE1CC120BA00FE92FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB225BF01CC120BA00FE92FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB225BF31CC120BA00FE92FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB225BF51CC120BA00FE92FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB225BF81CC120BA00FE92FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB225BFA1CC120BA00FE92FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB225BFF1CC120BA00FE92FC /* litleTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = litleTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB225C031CC120BA00FE92FC /* litleTalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = litleTalkTests.swift; sourceTree = "<group>"; };
+		BB225C051CC120BA00FE92FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB225C0A1CC120BA00FE92FC /* litleTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = litleTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB225C0E1CC120BA00FE92FC /* litleTalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = litleTalkUITests.swift; sourceTree = "<group>"; };
+		BB225C101CC120BA00FE92FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB225C1D1CC1231700FE92FC /* litleTalk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "litleTalk-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB31C3801CC7386900ED7B1E /* ChatlistNaviController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatlistNaviController.swift; sourceTree = "<group>"; };
+		BB31C3821CC772AE00ED7B1E /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
+		BB31C3831CC772AE00ED7B1E /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
+		BB31C3851CC772BB00ED7B1E /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
+		BB6412AE1CC4BC7700DBE656 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BB6412B01CC4BC9800DBE656 /* RegisterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTableViewController.swift; sourceTree = "<group>"; };
+		BB6412D71CC4CDC600DBE656 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		BB6412D81CC4CDC600DBE656 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB6412DB1CC4CDC600DBE656 /* KaedeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaedeTextField.swift; sourceTree = "<group>"; };
+		BBACD9CE1CC1E7D600CA2C8D /* ConversationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationListViewController.swift; sourceTree = "<group>"; };
+		BBACD9D01CC1E7E400CA2C8D /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		BBD722301CC85F05006E1108 /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		BBD722321CC8604C006E1108 /* AddFriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
+		BBD722341CC86C66006E1108 /* SearedFriendDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearedFriendDetailViewController.swift; sourceTree = "<group>"; };
+		BBD722361CC8771B006E1108 /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		C2BD14B73E96C01A63443023 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB225BE81CC120BA00FE92FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F3C2B860D5696FB1D80C0B5 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB225BFC1CC120BA00FE92FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB225C071CC120BA00FE92FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FEB19C49676323421C8767C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B2352F4E2F2F8CA24FADF9D /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB9CDE973F6C905123476A58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68188F8BD24B098142CC1920 /* Pods.debug.xcconfig */,
+				C2BD14B73E96C01A63443023 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB0FBD911CC60E8300EADB65 /* AJWValidator */ = {
+			isa = PBXGroup;
+			children = (
+				BB0FBD921CC60E8300EADB65 /* AJWNumericValidator.h */,
+				BB0FBD931CC60E8300EADB65 /* AJWNumericValidator.m */,
+				BB0FBD941CC60E8300EADB65 /* AJWStringValidator.h */,
+				BB0FBD951CC60E8300EADB65 /* AJWStringValidator.m */,
+				BB0FBD961CC60E8300EADB65 /* AJWValidator+Private.h */,
+				BB0FBD971CC60E8300EADB65 /* AJWValidator.h */,
+				BB0FBD981CC60E8300EADB65 /* AJWValidator.m */,
+				BB0FBD991CC60E8300EADB65 /* AJWValidatorCustomRule.h */,
+				BB0FBD9A1CC60E8300EADB65 /* AJWValidatorCustomRule.m */,
+				BB0FBD9B1CC60E8300EADB65 /* AJWValidatorEqualRule.h */,
+				BB0FBD9C1CC60E8300EADB65 /* AJWValidatorEqualRule.m */,
+				BB0FBD9D1CC60E8300EADB65 /* AJWValidatorRangeRule.h */,
+				BB0FBD9E1CC60E8300EADB65 /* AJWValidatorRangeRule.m */,
+				BB0FBD9F1CC60E8300EADB65 /* AJWValidatorRegularExpressionRule.h */,
+				BB0FBDA01CC60E8300EADB65 /* AJWValidatorRegularExpressionRule.m */,
+				BB0FBDA11CC60E8300EADB65 /* AJWValidatorRemoteRule.h */,
+				BB0FBDA21CC60E8300EADB65 /* AJWValidatorRemoteRule.m */,
+				BB0FBDA31CC60E8300EADB65 /* AJWValidatorRequiredRule.h */,
+				BB0FBDA41CC60E8300EADB65 /* AJWValidatorRequiredRule.m */,
+				BB0FBDA51CC60E8300EADB65 /* AJWValidatorRule.h */,
+				BB0FBDA61CC60E8300EADB65 /* AJWValidatorRule.m */,
+				BB0FBDA71CC60E8300EADB65 /* UIView+AJWValidator.h */,
+				BB0FBDA81CC60E8300EADB65 /* UIView+AJWValidator.m */,
+			);
+			path = AJWValidator;
+			sourceTree = "<group>";
+		};
+		BB225BE21CC120BA00FE92FC = {
+			isa = PBXGroup;
+			children = (
+				BB225C1D1CC1231700FE92FC /* litleTalk-Bridging-Header.h */,
+				BB225BED1CC120BA00FE92FC /* litleTalk */,
+				BB225C021CC120BA00FE92FC /* litleTalkTests */,
+				BB225C0D1CC120BA00FE92FC /* litleTalkUITests */,
+				BB225BEC1CC120BA00FE92FC /* Products */,
+				BB0FBD911CC60E8300EADB65 /* AJWValidator */,
+				AB9CDE973F6C905123476A58 /* Pods */,
+				8FEB19C49676323421C8767C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB225BEC1CC120BA00FE92FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB225BEB1CC120BA00FE92FC /* litleTalk.app */,
+				BB225BFF1CC120BA00FE92FC /* litleTalkTests.xctest */,
+				BB225C0A1CC120BA00FE92FC /* litleTalkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB225BED1CC120BA00FE92FC /* litleTalk */ = {
+			isa = PBXGroup;
+			children = (
+				BB6412D51CC4CDC600DBE656 /* TextFieldEffects */,
+				BBACD9CB1CC1E78000CA2C8D /* controllers */,
+				BB225BEE1CC120BA00FE92FC /* AppDelegate.swift */,
+				BB225BF01CC120BA00FE92FC /* ViewController.swift */,
+				BB225BF21CC120BA00FE92FC /* Main.storyboard */,
+				BB225BF51CC120BA00FE92FC /* Assets.xcassets */,
+				BB225BF71CC120BA00FE92FC /* LaunchScreen.storyboard */,
+				BB225BFA1CC120BA00FE92FC /* Info.plist */,
+				BB0FBDB41CC618AB00EADB65 /* Input.swift */,
+			);
+			path = litleTalk;
+			sourceTree = "<group>";
+		};
+		BB225C021CC120BA00FE92FC /* litleTalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB225C031CC120BA00FE92FC /* litleTalkTests.swift */,
+				BB225C051CC120BA00FE92FC /* Info.plist */,
+			);
+			path = litleTalkTests;
+			sourceTree = "<group>";
+		};
+		BB225C0D1CC120BA00FE92FC /* litleTalkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB225C0E1CC120BA00FE92FC /* litleTalkUITests.swift */,
+				BB225C101CC120BA00FE92FC /* Info.plist */,
+			);
+			path = litleTalkUITests;
+			sourceTree = "<group>";
+		};
+		BB6412D51CC4CDC600DBE656 /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				BB6412D71CC4CDC600DBE656 /* HoshiTextField.swift */,
+				BB31C3851CC772BB00ED7B1E /* SwiftNotice.swift */,
+				BB31C3821CC772AE00ED7B1E /* TextFieldEffects.h */,
+				BB31C3831CC772AE00ED7B1E /* TextFieldsEffects.swift */,
+				BB6412D81CC4CDC600DBE656 /* Info.plist */,
+				BB6412DB1CC4CDC600DBE656 /* KaedeTextField.swift */,
+			);
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		BBACD9CB1CC1E78000CA2C8D /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BBACD9CE1CC1E7D600CA2C8D /* ConversationListViewController.swift */,
+				BBACD9D01CC1E7E400CA2C8D /* ChatViewController.swift */,
+				BB6412AE1CC4BC7700DBE656 /* LoginViewController.swift */,
+				BB6412B01CC4BC9800DBE656 /* RegisterTableViewController.swift */,
+				BB0FBDB81CC637A700EADB65 /* TabBarViewController.swift */,
+				BB0FBDBA1CC65CB000EADB65 /* MoreViewController.swift */,
+				BB31C3801CC7386900ED7B1E /* ChatlistNaviController.swift */,
+				BBD722301CC85F05006E1108 /* FindViewController.swift */,
+				BBD722321CC8604C006E1108 /* AddFriendViewController.swift */,
+				BBD722341CC86C66006E1108 /* SearedFriendDetailViewController.swift */,
+				BBD722361CC8771B006E1108 /* ContactsViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB225BEA1CC120BA00FE92FC /* litleTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB225C131CC120BA00FE92FC /* Build configuration list for PBXNativeTarget "litleTalk" */;
+			buildPhases = (
+				97A255AB12C6EDB0F70683C0 /* Check Pods Manifest.lock */,
+				BB225BE71CC120BA00FE92FC /* Sources */,
+				BB225BE81CC120BA00FE92FC /* Frameworks */,
+				BB225BE91CC120BA00FE92FC /* Resources */,
+				2B2F08F783F19D1378CB2F64 /* Embed Pods Frameworks */,
+				8525B18340D3AC2E56AE1F9E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = litleTalk;
+			productName = litleTalk;
+			productReference = BB225BEB1CC120BA00FE92FC /* litleTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB225BFE1CC120BA00FE92FC /* litleTalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB225C161CC120BA00FE92FC /* Build configuration list for PBXNativeTarget "litleTalkTests" */;
+			buildPhases = (
+				BB225BFB1CC120BA00FE92FC /* Sources */,
+				BB225BFC1CC120BA00FE92FC /* Frameworks */,
+				BB225BFD1CC120BA00FE92FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB225C011CC120BA00FE92FC /* PBXTargetDependency */,
+			);
+			name = litleTalkTests;
+			productName = litleTalkTests;
+			productReference = BB225BFF1CC120BA00FE92FC /* litleTalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB225C091CC120BA00FE92FC /* litleTalkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB225C191CC120BA00FE92FC /* Build configuration list for PBXNativeTarget "litleTalkUITests" */;
+			buildPhases = (
+				BB225C061CC120BA00FE92FC /* Sources */,
+				BB225C071CC120BA00FE92FC /* Frameworks */,
+				BB225C081CC120BA00FE92FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB225C0C1CC120BA00FE92FC /* PBXTargetDependency */,
+			);
+			name = litleTalkUITests;
+			productName = litleTalkUITests;
+			productReference = BB225C0A1CC120BA00FE92FC /* litleTalkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB225BE31CC120BA00FE92FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Tek;
+				TargetAttributes = {
+					BB225BEA1CC120BA00FE92FC = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = MZQ69JY9K2;
+					};
+					BB225BFE1CC120BA00FE92FC = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = MZQ69JY9K2;
+						TestTargetID = BB225BEA1CC120BA00FE92FC;
+					};
+					BB225C091CC120BA00FE92FC = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = MZQ69JY9K2;
+						TestTargetID = BB225BEA1CC120BA00FE92FC;
+					};
+				};
+			};
+			buildConfigurationList = BB225BE61CC120BA00FE92FC /* Build configuration list for PBXProject "litleTalk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB225BE21CC120BA00FE92FC;
+			productRefGroup = BB225BEC1CC120BA00FE92FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB225BEA1CC120BA00FE92FC /* litleTalk */,
+				BB225BFE1CC120BA00FE92FC /* litleTalkTests */,
+				BB225C091CC120BA00FE92FC /* litleTalkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB225BE91CC120BA00FE92FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6412E41CC4CDC600DBE656 /* Info.plist in Resources */,
+				BB225BF91CC120BA00FE92FC /* LaunchScreen.storyboard in Resources */,
+				BB225BF61CC120BA00FE92FC /* Assets.xcassets in Resources */,
+				BB225BF41CC120BA00FE92FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB225BFD1CC120BA00FE92FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB225C081CC120BA00FE92FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B2F08F783F19D1378CB2F64 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8525B18340D3AC2E56AE1F9E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97A255AB12C6EDB0F70683C0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB225BE71CC120BA00FE92FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0FBDAA1CC60E8300EADB65 /* AJWStringValidator.m in Sources */,
+				BB0FBDAD1CC60E8300EADB65 /* AJWValidatorEqualRule.m in Sources */,
+				BB0FBDB21CC60E8300EADB65 /* AJWValidatorRule.m in Sources */,
+				BBD722371CC8771B006E1108 /* ContactsViewController.swift in Sources */,
+				BBD722351CC86C66006E1108 /* SearedFriendDetailViewController.swift in Sources */,
+				BB0FBDAC1CC60E8300EADB65 /* AJWValidatorCustomRule.m in Sources */,
+				BB31C3811CC7386900ED7B1E /* ChatlistNaviController.swift in Sources */,
+				BBD722311CC85F05006E1108 /* FindViewController.swift in Sources */,
+				BB0FBDA91CC60E8300EADB65 /* AJWNumericValidator.m in Sources */,
+				BBACD9CF1CC1E7D600CA2C8D /* ConversationListViewController.swift in Sources */,
+				BB0FBDB31CC60E8300EADB65 /* UIView+AJWValidator.m in Sources */,
+				BB31C3861CC772BB00ED7B1E /* SwiftNotice.swift in Sources */,
+				BB0FBDAE1CC60E8300EADB65 /* AJWValidatorRangeRule.m in Sources */,
+				BB0FBDAF1CC60E8300EADB65 /* AJWValidatorRegularExpressionRule.m in Sources */,
+				BBD722331CC8604C006E1108 /* AddFriendViewController.swift in Sources */,
+				BB6412E71CC4CDC600DBE656 /* KaedeTextField.swift in Sources */,
+				BB0FBDB11CC60E8300EADB65 /* AJWValidatorRequiredRule.m in Sources */,
+				BB225BF11CC120BA00FE92FC /* ViewController.swift in Sources */,
+				BB0FBDB51CC618AB00EADB65 /* Input.swift in Sources */,
+				BB0FBDAB1CC60E8300EADB65 /* AJWValidator.m in Sources */,
+				BB6412E31CC4CDC600DBE656 /* HoshiTextField.swift in Sources */,
+				BB0FBDB01CC60E8300EADB65 /* AJWValidatorRemoteRule.m in Sources */,
+				BBACD9D11CC1E7E400CA2C8D /* ChatViewController.swift in Sources */,
+				BB6412AF1CC4BC7700DBE656 /* LoginViewController.swift in Sources */,
+				BB6412B11CC4BC9800DBE656 /* RegisterTableViewController.swift in Sources */,
+				BB0FBDB91CC637A700EADB65 /* TabBarViewController.swift in Sources */,
+				BB0FBDBB1CC65CB000EADB65 /* MoreViewController.swift in Sources */,
+				BB31C3841CC772AE00ED7B1E /* TextFieldsEffects.swift in Sources */,
+				BB225BEF1CC120BA00FE92FC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB225BFB1CC120BA00FE92FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB225C041CC120BA00FE92FC /* litleTalkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB225C061CC120BA00FE92FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB225C0F1CC120BA00FE92FC /* litleTalkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB225C011CC120BA00FE92FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB225BEA1CC120BA00FE92FC /* litleTalk */;
+			targetProxy = BB225C001CC120BA00FE92FC /* PBXContainerItemProxy */;
+		};
+		BB225C0C1CC120BA00FE92FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB225BEA1CC120BA00FE92FC /* litleTalk */;
+			targetProxy = BB225C0B1CC120BA00FE92FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB225BF21CC120BA00FE92FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB225BF31CC120BA00FE92FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB225BF71CC120BA00FE92FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB225BF81CC120BA00FE92FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB225C111CC120BA00FE92FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB225C121CC120BA00FE92FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB225C141CC120BA00FE92FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68188F8BD24B098142CC1920 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/RongCloudIMKit/Rong_Cloud_iOS_IMKit_SDK_v2_4_8_stable\"",
+					"\"${PODS_ROOT}/RongCloudIMKit/Rong_Cloud_iOS_IMKit_SDK_v2_4_8_stable\"",
+					"\"${PODS_ROOT}/AVOSCloud\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public/AVOSCloud.h\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
+				INFOPLIST_FILE = litleTalk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/AVOSCloud\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/RongCloudIMKit/Rong_Cloud_iOS_IMKit_SDK_v2_4_8_stable\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tek.litleTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "litleTalk-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB225C151CC120BA00FE92FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2BD14B73E96C01A63443023 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/RongCloudIMKit/Rong_Cloud_iOS_IMKit_SDK_v2_4_8_stable\"",
+					"\"${PODS_ROOT}/RongCloudIMKit/Rong_Cloud_iOS_IMKit_SDK_v2_4_8_stable\"",
+					"\"${PODS_ROOT}/AVOSCloud\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public/AVOSCloud.h\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
+				INFOPLIST_FILE = litleTalk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/AVOSCloud\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/RongCloudIMKit/Rong_Cloud_iOS_IMKit_SDK_v2_4_8_stable\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tek.litleTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "litleTalk-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		BB225C171CC120BA00FE92FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = litleTalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tek.litleTalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/litleTalk.app/litleTalk";
+			};
+			name = Debug;
+		};
+		BB225C181CC120BA00FE92FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = litleTalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tek.litleTalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/litleTalk.app/litleTalk";
+			};
+			name = Release;
+		};
+		BB225C1A1CC120BA00FE92FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = litleTalkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tek.litleTalkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = litleTalk;
+			};
+			name = Debug;
+		};
+		BB225C1B1CC120BA00FE92FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = litleTalkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tek.litleTalkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = litleTalk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB225BE61CC120BA00FE92FC /* Build configuration list for PBXProject "litleTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB225C111CC120BA00FE92FC /* Debug */,
+				BB225C121CC120BA00FE92FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB225C131CC120BA00FE92FC /* Build configuration list for PBXNativeTarget "litleTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB225C141CC120BA00FE92FC /* Debug */,
+				BB225C151CC120BA00FE92FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB225C161CC120BA00FE92FC /* Build configuration list for PBXNativeTarget "litleTalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB225C171CC120BA00FE92FC /* Debug */,
+				BB225C181CC120BA00FE92FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB225C191CC120BA00FE92FC /* Build configuration list for PBXNativeTarget "litleTalkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB225C1A1CC120BA00FE92FC /* Debug */,
+				BB225C1B1CC120BA00FE92FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB225BE31CC120BA00FE92FC /* Project object */;
+}
