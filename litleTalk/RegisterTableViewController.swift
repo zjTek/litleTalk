@@ -84,43 +84,12 @@ class RegisterTableViewController: UITableViewController {
                 
             } else {
                 
-                let requestOp = NSBlockOperation{
+              
                     self.requestToken(self.userTF.text!)
-                }
-                let uploadOp = NSBlockOperation{
-                    
-                    let tokens = self.userDefault?.stringForKey("TOKENTMP")!
-                    print(tokens)
-                    self.userInfo["tokenme"] = tokens
-                    
-                    self.userInfo.saveInBackgroundWithBlock({ (succeed, err) in
-                        if succeed {
-                            self.successNotice("注册成功!")
-                            
-                            self.navigationController?.popViewControllerAnimated(true)
-                        } else {
-                            self.errorNotice("注册失败!")
-                        }
-                        
-                    })
-
-
-                }
-                uploadOp.addDependency(requestOp)
-                let myOPqueue = NSOperationQueue()
-                myOPqueue.addOperation(uploadOp)
-                myOPqueue.addOperation(requestOp)
-                
-        
-                
-                
-                
-        }
-    }
-        
-        
+}
     
     }
+}
     
     
     
@@ -148,9 +117,16 @@ class RegisterTableViewController: UITableViewController {
            let code = dic.valueForKey("code") as! NSNumber
             if code.stringValue == "200" {
                 self.userToken = dic.valueForKey("token") as? String
+                self.userInfo["tokenme"] = self.userToken
                 
-                self.userDefault?.setValue(self.userToken, forKey: "TOKENTMP")
-                self.userDefault?.synchronize()
+                
+                self.userInfo.saveInBackground()
+                self.navigationController?.popViewControllerAnimated(true)
+                self.successNotice("注册成功!")
+                
+                
+                
+                
               }
             }
         

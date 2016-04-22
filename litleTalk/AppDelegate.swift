@@ -56,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource {
         
         dispatch_async(dispatch_get_main_queue()) { 
         
-            self.tabVC?.presentViewController(loginView, animated: true, completion: { 
+            self.tabVC?.presentViewController(loginView, animated: false, completion: {
                 
             })
             
